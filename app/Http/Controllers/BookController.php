@@ -22,9 +22,9 @@ class BookController extends Controller
    		// 		->join('publishers','publishers.id','=','books.publisher_id')
    		// 		->select('books.id','books.b_name','authors.a_name','publishers.p_name','genres.g_name')
    		// 		->get();
-        $books = Book::with('authors','genres','publishers')->get();
-           		// dd($books);
-   		return view('book.list',['book'=>$books]);
+		 $books = Book::with('authors','genres','publishers')->get();
+		 //return $books;
+   		 return view('book.list',['book'=>$books]);
    }
 
    public function create()

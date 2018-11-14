@@ -35,7 +35,7 @@
                             <tr>
                                 <td>{{ $i++ }}</td>
                                 <td>{{ $all->b_name }}</td>
-                                <td>{{ $all->authors->a_name }}</td>
+                                <td>{{ $all->authors['a_name'] }}</td>
                                 <td>{{ $all->genres->g_name }}</td>
                                 <td>{{ $all->publishers->p_name }}</td>
                                 <td>
